@@ -43,28 +43,6 @@ body::before{
 
 
 
-
-.video-bg{
-  position:fixed;
-  top:0;left:0;
-  width:100%;height:100%;
-  z-index:0;pointer-events:none;
-  overflow:hidden;
-}
-.video-bg video{
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  min-width:100%;min-height:100%;
-  width:auto;height:auto;
-  object-fit:cover;
-}
-.video-overlay{
-  position:fixed;
-  inset:0;
-  background:linear-gradient(180deg,rgba(8,15,32,.82) 0%,rgba(14,27,58,.78) 50%,rgba(8,15,32,.88) 100%);
-  z-index:0;pointer-events:none;
-}
 .courthouse-bg{
   position:fixed;
   top:160px;left:50%;
@@ -250,13 +228,7 @@ body::after{
 </head>
 <body>
 
-<div class="video-bg">
-  <video autoplay muted loop playsinline>
-    <source src="Courthouse_at_dusk_timelapse_9fced4f026.mp4" type="video/mp4">
-  </video>
-</div>
-<div class="video-overlay"></div>
-
+<div class="courthouse-bg"></div>
 <div class="page">
 
   <!-- HERO -->
@@ -277,11 +249,11 @@ body::after{
 
   <!-- BUTTONS -->
   <div class="btns">
-    <a href="https://laceesharee.github.io/rtc-notary-calculator/" class="btn btn-quote">
+    <a href="https://laceesharee.github.io/quote-booking/" class="btn btn-quote">
       <span class="btn-icon">&#128197;</span>
       Get a Free Quote
     </a>
-    <a href="https://laceesharee.github.io/rtc-notary-calculator/" class="btn btn-book">
+    <a href="https://laceesharee.github.io/quote-booking/" class="btn btn-book">
       <span class="btn-icon">&#9200;</span>
       Book Now
     </a>
@@ -305,14 +277,14 @@ body::after{
 
   <!-- FOOTER -->
   <div class="foot">
-    <div>817-512-7217 &nbsp;&middot;&nbsp; <a href="mailto:info@roundtheclocknotary.com">info@roundtheclocknotary.com</a></div>
+    <div>817-512-7217 &nbsp;&middot;&nbsp; <a href="/cdn-cgi/l/email-protection#177e797178576578627973637f72747b78747c79786376656e3974787a"><span class="__cf_email__" data-cfemail="50393e363f10223f253e34243835333c3f333b3e3f243122297e333f3d">[email&#160;protected]</span></a></div>
     <div><a href="https://www.roundtheclocknotary.com">RoundTheClockNotary.com</a></div>
   </div>
 
 </div>
 
 <!-- vCard download -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 document.getElementById("vcardBtn").addEventListener("click", function(e) {
   e.preventDefault();
   var vcard = [
@@ -326,10 +298,4 @@ document.getElementById("vcardBtn").addEventListener("click", function(e) {
     "URL:https://www.roundtheclocknotary.com",
     "ADR;TYPE=WORK:;;Hood County;Granbury;TX;76048;USA",
     "NOTE:Licensed. Bonded. Insured. Available When It Matters Most — Around the Clock.",
-    "X-SOCIALPROFILE;TYPE=facebook:https://www.facebook.com/RoundTheClockNotary",
-    "X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/company/round-the-clock-notary/",
-    "END:VCARD"
-  ].join("\r\n");
-
-  var blob = new Blob([vcard], {type:"text/vcard;charset=utf-8"});
-  var url = URL.createObjectURL(
+    "X-SOCIALPROFILE;TYPE=facebook:https://www.fa
