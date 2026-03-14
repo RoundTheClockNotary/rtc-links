@@ -138,6 +138,21 @@ body::before{
   font-family:"DM Sans",sans-serif;font-size:.6rem;letter-spacing:.03em;
   color:rgba(255,255,255,.35);margin-top:.5rem;line-height:1.6;
 }
+
+.website-link{
+  width:100%;text-align:center;
+  margin:.25rem 0 .75rem;
+}
+.website-link a{
+  font-family:"Cinzel",serif;
+  font-size:.68rem;font-weight:600;
+  letter-spacing:.06em;
+  color:var(--gold);
+  text-decoration:none;
+  opacity:.85;
+  transition:opacity .2s;
+}
+.website-link a:hover{opacity:1;text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -178,6 +193,10 @@ body::before{
     </a>
   </div>
 
+  <div class="website-link">
+    <a href="https://www.roundtheclocknotary.com" target="_blank">Visit our website for FAQ, About Us &amp; More!</a>
+  </div>
+
   <div class="divider"></div>
 
   <div class="socials">
@@ -190,12 +209,12 @@ body::before{
   </div>
 
   <div class="foot">
-    <div>817-512-7217 &nbsp;&middot;&nbsp; <a href="#" id="emailLink">info@roundtheclocknotary.com</a> &nbsp;&middot;&nbsp; <a href="https://www.roundtheclocknotary.com">RoundTheClockNotary.com</a></div>
+    <div>817-512-7217 &nbsp;&middot;&nbsp; <a href="#" id="emailLink"><span class="__cf_email__" data-cfemail="cba2a5ada48bb9a4bea5afbfa3aea8a7a4a8a0a5a4bfaab9b2e5a8a4a6">[email&#160;protected]</span></a> &nbsp;&middot;&nbsp; <a href="https://www.roundtheclocknotary.com">RoundTheClockNotary.com</a></div>
     <div class="legal">&copy; 2026 Round The Clock Notary &middot; ByPatience LLC &middot; Hood County, TX &middot; Not an attorney. Not legal advice. Licensed &middot; Bonded &middot; Insured.</div>
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 document.getElementById("vcardBtn").addEventListener("click", function(e) {
   e.preventDefault();
   var vcard = [
@@ -215,11 +234,4 @@ document.getElementById("vcardBtn").addEventListener("click", function(e) {
   a.href=url; a.download="RoundTheClockNotary.vcf";
   document.body.appendChild(a); a.click();
   document.body.removeChild(a); URL.revokeObjectURL(url);
-});
-document.getElementById("emailLink").addEventListener("click", function(e) {
-  e.preventDefault();
-  window.location.href = "mailto:" + "info" + "@" + "roundtheclocknotary.com";
-});
-</script>
-</body>
-</html>
+}
